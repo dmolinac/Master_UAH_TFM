@@ -1,0 +1,38 @@
+{
+  "name": "large-word",
+  "initiators": [
+    {
+      "id": 2,
+      "jobSpecId": "a361e8af-201d-4210-80a7-266cfb4e8f6f",
+      "type": "runlog",
+      "params": {
+        "address": "0xc57b33452b4f7bb189bb5afae9cc4aba1f7a4fd8"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "jobSpecId": "a361e8af201d421080a7266cfb4e8f6f",
+      "type": "httpget"
+    },
+    {
+      "jobSpecId": "a361e8af201d421080a7266cfb4e8f6f",
+      "type": "jsonparse"
+    },
+    {
+      "jobSpecId": "a361e8af201d421080a7266cfb4e8f6f",
+      "type": "resultcollect"
+    },
+    {
+      "jobSpecId": "a361e8af201d421080a7266cfb4e8f6f",
+      "type": "ethtx",
+      "confirmations": 1,
+      "params": {
+        "abiEncoding": [
+          "bytes32",
+          "bytes"
+        ]
+      }
+    }
+  ]
+}

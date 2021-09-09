@@ -1,0 +1,31 @@
+{
+  "name": "Get > ethbytes32",
+  "initiators": [
+    {
+      "id": 1,
+      "jobSpecId": "9daa7f51-30ab-4439-a63d-ee42a15d119a",
+      "type": "runlog",
+      "params": {
+        "address": "0x0000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "jobSpecId": "9daa7f5130ab4439a63dee42a15d119a",
+      "type": "httpget"
+    },
+    {
+      "jobSpecId": "9daa7f5130ab4439a63dee42a15d119a",
+      "type": "jsonparse"
+    },
+    {
+      "jobSpecId": "9daa7f5130ab4439a63dee42a15d119a",
+      "type": "ethbytes32"
+    },
+    {
+      "jobSpecId": "9daa7f5130ab4439a63dee42a15d119a",
+      "type": "ethtx"
+    }
+  ]
+}
